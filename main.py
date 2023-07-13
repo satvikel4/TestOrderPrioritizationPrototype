@@ -20,8 +20,6 @@ total_permutations_t = permutations(n, t)
 for permutation_t in total_permutations_t:
     print(permutation_t)
 
-# Assuming 'generate_tuscan_permutations' is a function to generate the Tuscan permutations
-# Replace this with the actual function name if it's different
 print("Prioritized permutations of test orders: ")
 prioritized_permutations = tuscan.generate_tuscan_permutations(n)
 for permutation in prioritized_permutations:
