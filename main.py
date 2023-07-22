@@ -1,5 +1,7 @@
 import itertools
 import tuscan
+import coverage
+
 
 num_classes = int(input("Enter the number of classes (1 or 2): "))
 
@@ -25,8 +27,14 @@ def one_class():
 
     print("Prioritized permutations of test orders: ")
     prioritized_permutations = tuscan.generate_tuscan_permutations(n)
+    #print(prioritized_permutations)
     for permutation in prioritized_permutations:
         print(permutation)
+
+    sorted_orders = coverage.sort_orders(prioritized_permutations, t)
+    print("Sorted Orders: ")
+    for order in sorted_orders:
+        print(order)
 
 def multi_class():
     methods_per_class = []
