@@ -77,7 +77,7 @@ def generate_tuscan_permutations(arg):
         return r
 
     def generate_one():
-        return [[0, 0]]
+        return [[0]]
 
     def generate_three():
         return [
